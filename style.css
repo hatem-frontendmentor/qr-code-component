@@ -1,0 +1,93 @@
+
+:root {
+    --white-color: #FFFFFF;
+    --slate-300: #D6E2F0;
+    --slate-500: #68778D;
+    --slate-900: #1F3251;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    /*box-sizing: border-box;*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--slate-300);
+}
+
+.container {
+
+    /*background: #d3e1ee;*/
+    /*background: var(--slate-300);*/
+    display: flex;
+
+    /*width: 100%;*/
+    justify-content: center;
+    /* horizontal center */
+    align-items: center;
+    /* vertical center */
+    height: 100vh;
+    margin: auto;
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    /*width: var(--desktop-width);*/
+    /* horizontal center */
+    align-items: center;
+    /* vertical center */
+    /* height: 100vh; */
+    flex-direction: column;
+    gap: 20px;
+    background: var(--white-color);
+
+    width: 320px;
+    padding: 16px;
+    /*width: 20%;*/
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.card .card-title {
+    font-size: 21px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.card .card-text {
+    /* margin: 20px 0; */
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--slate-500);
+    padding: 0 12px;
+    padding-bottom: 30px;
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    /*body {*/
+    /*   */
+    /*}*/
+    /*.card{*/
+    /*    max-width: var(--mobile-width);*/
+    /*}*/
+}
