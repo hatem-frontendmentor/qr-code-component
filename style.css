@@ -49,7 +49,7 @@ body {
     /* vertical center */
     /* height: 100vh; */
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     background: var(--white-color);
 
     width: 320px;
